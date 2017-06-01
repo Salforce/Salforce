@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BDA8691-97F7-44BB-92D7-72656E76C50F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SalForce.My.MyApplication</StartupObject>
+    <RootNamespace>SalForce</RootNamespace>
+    <AssemblyName>SalForce</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Interop, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.VSCore, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Data.v13.1">
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Decompiler, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Localization, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.MetaData, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=13.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1.UI">
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions">
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="VSLangProj80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="dsBelasting.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBelasting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Premies.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Premies.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\DataSets\dsCHILDTABLE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCHILDTABLE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\DataSets\dsCompanyIsland.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCompanyIsland.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\DataSets\dsDepartments.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDepartments.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\DataSets\dsNewSalforceData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNewSalforceData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\1000-Constant Definitions.vb" />
+    <Compile Include="Resources\Databasefunctions.vb" />
+    <Compile Include="Resources\INTERNET.vb" />
+    <Compile Include="Resources\Language.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsBelastingVariabel.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsChildren.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsEmployee.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsEmpChild.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsCompany.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsSalaryPeriod.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\clsResizeComboBox.vb" />
+    <Compile Include="Resources\ContextMenus\ChildrencontextMenu.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\COMPANYTABLE.Designer.vb">
+      <DependentUpon>COMPANYTABLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\COMPANYTABLE.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\ConnectionHelper.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\DEPARTMENTS.Designer.vb">
+      <DependentUpon>DEPARTMENTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\DEPARTMENTS.vb" />
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\EMPTABLE.Designer.vb">
+      <DependentUpon>EMPTABLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalforceCode\SalForceClasses\DevXDataModelCode\EMPTABLE.vb" />
+    <Compile Include="Resources\SalForceForms\frmEmployeeChildren.Designer.vb">
+      <DependentUpon>frmEmployeeChildren.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\frmEmployeeChildren.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\frmAddchild.Designer.vb">
+      <DependentUpon>frmAddchild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\frmAddchild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\frmEmployee.Designer.vb">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\frmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\Salaryreport.Designer.vb">
+      <DependentUpon>Salaryreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\Salaryreport.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport2.Designer.vb">
+      <DependentUpon>XtraReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport4.Designer.vb">
+      <DependentUpon>XtraReport4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport4.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport5.Designer.vb">
+      <DependentUpon>XtraReport5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtraReport5.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtrarptSalary.Designer.vb">
+      <DependentUpon>XtrarptSalary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SalForceForms\XtrarptSalary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\SQLDMS.vb" />
+    <Compile Include="Resources\SalforceCode\Tabs\Tabs.vb" />
+    <Compile Include="Resources\SalforceCode\Tabs\Tabs_Enabling.vb" />
+    <Compile Include="Resources\SalforceCode\Tabs\Tabs_Updating.vb" />
+    <Compile Include="Resources\SalforceCode\Tabs\Tabs_Loading.vb" />
+    <Compile Include="Resources\UTILITIES.vb" />
+    <Compile Include="Resources\XtraForm1.Designer.vb">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\XtraForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\XtraReport3.Designer.vb">
+      <DependentUpon>XtraReport3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\XtraReport3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\XtraUserControl1.Designer.vb">
+      <DependentUpon>XtraUserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\XtraUserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Salary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SocialePremies.Designer.vb">
+      <DependentUpon>SocialePremies.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SocialePremies.vb">
+      <DependentUpon>SocialePremies.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stpSALF3000.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stpSALF3000.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Resources\SalForceForms\frmEmployeeChildren.resx">
+      <DependentUpon>frmEmployeeChildren.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SalForceForms\frmAddchild.resx">
+      <DependentUpon>frmAddchild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SalForceForms\frmEmployee.resx">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SalForceForms\Salaryreport.resx">
+      <DependentUpon>Salaryreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SalForceForms\XtraReport2.resx">
+      <DependentUpon>XtraReport2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SalForceForms\XtraReport5.resx">
+      <DependentUpon>XtraReport5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\XtraForm1.resx">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="dsBelasting.xsc">
+      <DependentUpon>dsBelasting.xsd</DependentUpon>
+    </None>
+    <None Include="dsBelasting.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBelasting.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBelasting.xss">
+      <DependentUpon>dsBelasting.xsd</DependentUpon>
+    </None>
+    <None Include="Premies.xsc">
+      <DependentUpon>Premies.xsd</DependentUpon>
+    </None>
+    <None Include="Premies.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Premies.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Premies.xss">
+      <DependentUpon>Premies.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsCHILDTABLE.xsc">
+      <DependentUpon>dsCHILDTABLE.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsCHILDTABLE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCHILDTABLE.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsCHILDTABLE.xss">
+      <DependentUpon>dsCHILDTABLE.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Diagrams\ClassDiagram1.cd" />
+    <None Include="Resources\SalforceCode\DataSets\dsCompanyIsland.xsc">
+      <DependentUpon>dsCompanyIsland.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsCompanyIsland.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCompanyIsland.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsCompanyIsland.xss">
+      <DependentUpon>dsCompanyIsland.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsDepartments.xsc">
+      <DependentUpon>dsDepartments.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsDepartments.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDepartments.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsDepartments.xss">
+      <DependentUpon>dsDepartments.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Salary.xsc">
+      <DependentUpon>Salary.xsd</DependentUpon>
+    </None>
+    <None Include="Salary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Salary.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Salary.xss">
+      <DependentUpon>Salary.xsd</DependentUpon>
+    </None>
+    <None Include="SocialePremies.xsc">
+      <DependentUpon>SocialePremies.xsd</DependentUpon>
+    </None>
+    <None Include="SocialePremies.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SocialePremies.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SocialePremies.xss">
+      <DependentUpon>SocialePremies.xsd</DependentUpon>
+    </None>
+    <None Include="stpSALF3000.xsc">
+      <DependentUpon>stpSALF3000.xsd</DependentUpon>
+    </None>
+    <None Include="stpSALF3000.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stpSALF3000.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stpSALF3000.xss">
+      <DependentUpon>stpSALF3000.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalforceCode\DataSets\dsNewSalforceData.xsc">
+      <DependentUpon>dsNewSalforceData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsNewSalforceData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNewSalforceData.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SalforceCode\DataSets\dsNewSalforceData.xss">
+      <DependentUpon>dsNewSalforceData.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SalforcePictures\SalForce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\DevXReports\" />
+    <Folder Include="Resources\Salarydocumentations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

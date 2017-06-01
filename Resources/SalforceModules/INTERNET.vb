@@ -1,0 +1,3 @@
+﻿Module INTERNET
+
+End Module
